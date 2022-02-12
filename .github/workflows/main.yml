@@ -1,8 +1,8 @@
 name: Build Test and push
 on: [push]
 env:
-  IMAGE_NAME: latest
-  REPO_NAME: pinkchilipepper/student_service
+  IMAGE_NAME: student_service
+  REPO_NAME: pinkchilipepper
 
 
 
