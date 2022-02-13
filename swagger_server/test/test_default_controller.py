@@ -29,7 +29,7 @@ class TestDefaultController(BaseTestCase):
     def test_delete_student(self):
         """Test case for delete_student
 
-        gets student
+        deletes student
         """
         response = self.client.open(
             '/tutorial/1.0.0/student/{student_id}'.format(student_id=56),
@@ -40,7 +40,7 @@ class TestDefaultController(BaseTestCase):
     def test_get_student_by_id(self):
         """Test case for get_student_by_id
 
-        gets student
+        deletes student
         """
         response = self.client.open(
             '/tutorial/1.0.0/student/{student_id}'.format(student_id=56),

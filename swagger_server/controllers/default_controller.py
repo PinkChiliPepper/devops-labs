@@ -20,7 +20,7 @@ def add_student(body=None):  # noqa: E501
 
 
 def delete_student(student_id):  # noqa: E501
-    """gets student
+    """deletes student
 
     delete a single student  # noqa: E501
 
