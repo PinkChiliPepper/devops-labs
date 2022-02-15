@@ -7,9 +7,11 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  version: 1.0.0-oas3
+  version: 1.0.0
 servers:
 - url: https://virtserver.swaggerhub.com/tutorial/1.0.0
+  description: SwaggerHub API Auto Mocking
+- url: https://virtserver.swaggerhub.com/PinkChiliPepper/tutorial/1.0.0
   description: SwaggerHub API Auto Mocking
 paths:
   /student/{student_id}:
@@ -106,12 +108,12 @@ components:
         last_name:
           type: string
           example: Doe
-        gradeRecord:
+        gradeRecords:
           type: array
           items:
             $ref: '#/components/schemas/GradeRecord'
       example:
-        gradeRecord:
+        gradeRecords:
         - grade: 8.3
           subject_name: DevOps and Cloud Engineering
         - grade: 8.3
