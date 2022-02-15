@@ -8,10 +8,13 @@ from swagger_server import util
 
 def add_student(body=None):  # noqa: E501
     """Add a new student
+
     Adds an item to the system # noqa: E501
+
     :param body: Student item to add
     :type body: dict | bytes
-    :rtype: float
+
+    :rtype: int
     """
     if connexion.request.is_json:
         body = Student.from_dict(connexion.request.get_json())  # noqa: E501
